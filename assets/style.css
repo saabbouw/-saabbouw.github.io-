@@ -93,3 +93,29 @@ img{max-width:100%;display:block}
   }
 }
 
+/* إصلاح ظهور قائمة الموبايل */
+@media(max-width:900px){
+  .nav {
+    display: none; /* إخفاء القائمة افتراضياً */
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background: #0f0f0f;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.06);
+    z-index: 9999;
+  }
+
+  .nav.show {
+    display: flex !important;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
