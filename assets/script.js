@@ -29,3 +29,15 @@ function toggleMobileMenu(){
   document.getElementById("mobileNav").classList.toggle("show");
 }
 
+// التأكد من عمل زر القائمة
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.querySelector('.mobile-menu-btn');
+  const nav = document.getElementById('mobileNav');
+
+  if(btn && nav){
+    btn.addEventListener('click', function(){
+      nav.classList.toggle('show');
+    });
+  }
+});
+
