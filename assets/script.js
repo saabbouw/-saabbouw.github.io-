@@ -1,6 +1,4 @@
- // main.js – النسخة النهائية
-
-// قائمة الموبايل
+ // قائمة الموبايل
 function toggleMenu() {
   const menu = document.getElementById('menu');
   if(menu) menu.classList.toggle('show');
